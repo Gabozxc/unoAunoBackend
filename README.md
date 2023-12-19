@@ -15,28 +15,12 @@ $ yarn run start:dev
 
 # production mode
 $ yarn run start:prod
+
+# sync DB
+$ npx prisma db pull
+$ npx prisma generate
 ```
-
-## Test
-
-```bash
-# unit tests
-$ yarn run test
-
-# e2e tests
-$ yarn run test:e2e
-
-# test coverage
-$ yarn run test:cov
-```
-
 # ENV variables:
 
-## DATABASE_URL=""
-## JWT_SECRET=""
- 
-# Commands to update Mongodb:
-
-## npx prisma db pull
-
-## npx prisma generate
+## DATABASE_URL="" // Connect with the mongoDB
+## JWT_SECRET=""  // For future implementation
